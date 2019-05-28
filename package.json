@@ -1,0 +1,32 @@
+{
+  "name": "unam",
+  "version": "1.0.0",
+  "description": "website for unam studios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": " postcss ./style.css -o ./style.min.css -w",
+    "start": "yarn watch:css && parcel index.html",
+    "build": "NODE_ENV=production postcss ./style.css -o ./style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Afromakers/unam.git"
+  },
+  "keywords": [
+    "postcss",
+    "design"
+  ],
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^6.1.2"
+  },
+  "author": "casprine <casprine.001@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Afromakers/unam/issues"
+  },
+  "homepage": "https://github.com/Afromakers/unam#readme"
+}
