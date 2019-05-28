@@ -6,10 +6,10 @@ module.exports = {
     ...(process.env.NODE_ENV === "production"
       ? [
           purgecss({
-            content: ["./*.html"]
+            content: ["./*.html"],
           }),
-          require("cssnano")
+          require("cssnano"),
         ]
-      : [])
-  ]
+      : []),
+  ],
 };
